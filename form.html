@@ -62,14 +62,13 @@
     
 </head>
 <body>
- 
     <div class="entry-form">
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5j00000D98yH" method="POST">
+        <form id="enrollmentForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5j00000D98yH" method="POST">
             <input type="hidden" name="oid" value="00D5j00000D98yH">
-            <input type="hidden" name="retURL" value="https://www.google.com/">
+            <input type="hidden" name="retURL" value="">
             <h2>Enroll Today!</h2>
-            <input id="first_name" maxlength="40" name="first_name" class="form-control" placeholder="First Name" required="" size="20" type="text" required>
-            <input id="last_name" maxlength="40" name="last_name" class="form-control" placeholder="Last Name" required="" size="20" type="text" required>
+            <input id="first_name" maxlength="40" name="first_name" class="form-control" placeholder="First Name" required size="20" type="text">
+            <input id="last_name" maxlength="40" name="last_name" class="form-control" placeholder="Last Name" required size="20" type="text">
             <input id="email" maxlength="80" name="email" size="20" type="email" class="form-control" placeholder="Your Email Address" required>
             <input id="mobile" maxlength="10" name="mobile" type="tel" pattern="[0-9]*" class="form-control" placeholder="Mobile" required>
             <input id="city" maxlength="40" name="city" size="20" type="text" class="form-control" placeholder="City" required>
@@ -77,6 +76,21 @@
             <button type="submit" name="submit" class="submit-btn form-control" id="form-submit">Submit</button>
         </form>
     </div>
+    
+    <script>
+        document.getElementById("enrollmentForm").addEventListener("submit", function (event) {
+            var firstName = document.getElementById("first_name").value;
+            var lastName = document.getElementById("last_name").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("mobile").value;
+    
+            if (!firstName || !lastName || !email || !mobile) {
+                alert("Please fill out all required fields.");
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    </script>
+    
 
     
 </body>
