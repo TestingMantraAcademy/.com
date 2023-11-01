@@ -20,6 +20,9 @@
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="css/templatemo-style.css">
 
+
+
+
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -36,35 +39,39 @@
 <!-- MENU -->
 <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
      <div class="container">
-
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-
-               <!-- lOGO TEXT HERE -->
-               <a href="#home" class="navbar-brand"> <img src="images\Testing Mantra Logo12.png" alt="Testing Mantra Academy Logo"  width="200px" height="100px"> </a>
-          </div>
-
-          <!-- MENU LINKS -->
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-nav-first">
-                    <li><a href="#top" class="smoothScroll">Home</a></li>
-                    <li><a href="#feature" class="smoothScroll">Features</a></li>
-                    <li><a href="#about" class="smoothScroll">About</a></li>
-                    <li><a href="#team" class="smoothScroll">Our Teachers</a></li>
-                    <li><a href="#courses" class="smoothScroll">Courses</a></li>
-                    <li><a href="#testimonial" class="smoothScroll">Reviews</a></li>
-                    <li><a href="#contact" class="smoothScroll">Support</a></li>
-               </ul>
-
-          
-          </div>
-
+ 
+         <div class="navbar-header">
+             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                 <span class="icon icon-bar"></span>
+                 <span class="icon icon-bar"></span>
+                 <span class="icon icon-bar"></span>
+             </button>
+         </div>
+ 
+         <div class="navbar-brand" >
+             <!-- lOGO TEXT HERE -->
+             <a href="#home"><img src="images\Testing Mantra Logo12.png" alt="Testing Mantra Academy Logo" width="200px" height="auto"></a>
+             <!-- <a class="navbar-brand" href="#">
+               <img src="" alt="Square Logo" >
+           </a> -->
+         </div>
+ 
+         <!-- MENU LINKS -->
+         <div class="collapse navbar-collapse">
+             <ul class="nav navbar-nav navbar-nav-first">
+                 <li><a href="#top" class="smoothScroll">Home</a></li>
+                 <li><a href="#feature" class="smoothScroll">Features</a></li>
+                 <li><a href="#about" class="smoothScroll">About</a></li>
+                 <li><a href="#team" class="smoothScroll">Our Teachers</a></li>
+                 <li><a href="#courses" class="smoothScroll">Courses</a></li>
+                 <li><a href="#testimonial" class="smoothScroll">Reviews</a></li>
+                 <li><a href="#contact" class="smoothScroll">Support</a></li>
+             </ul>
+         </div>
+ 
      </div>
-</section>
+ </section>
+ 
 
 
 <!-- HOME -->
@@ -225,7 +232,12 @@ Your dreams, ambitions, and career aspirations find a home here. Let's embark on
                          </form>
                     </div>
                </div>
-               
+               <script>
+                    // Clear form fields when the page is loaded
+                    window.onload = function () {
+                        document.getElementsByClassName("entry-form").reset();
+                    };
+            </script>
           </div>
      </div>
 </section>
@@ -502,6 +514,12 @@ Your dreams, ambitions, and career aspirations find a home here. Let's embark on
 
                     </form>
                </div>
+               <script>
+                    // Clear form fields when the page is loaded
+                    window.onload = function () {
+                        document.getElementById("contact-form").reset();
+                    };
+            </script>
 
                <div class="col-md-6 col-sm-12">
                     <div class="contact-image">
@@ -549,7 +567,7 @@ Your dreams, ambitions, and career aspirations find a home here. Let's embark on
                                    </div>
                                         <div>
                                              <img src="images\email.png" alt="Email Logo" width="27" height="27">
-                                             <a href="mailto:example@email.com" style="font-size: 12px; margin-left: 10px; color: whitesmoke;">testingmantraacademy@gmail.com</a>
+                                             <a href="mailto:testingmantraacademy@gmail.com" style="font-size: 12px; margin-left: 10px; color: whitesmoke;">testingmantraacademy@gmail.com</a>
                                          </div>
                                     
                                         <!-- <p><a href="testingmantraacademy@gmail.com">testingmantraacademy@gmail.com</a></p> -->
