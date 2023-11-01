@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enroll Today!</title>
+    <link rel="icon" href="images\Testing Mantra Logo12.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2; /* Add a background color */
+        }
+
+        .navbar {
+            background-color: #252020; /* Change the navbar background color */
+        }
+
+        .navbar-brand img {
+            max-width: 100%; /* Ensure the logo scales down on smaller screens */
+        }
+
+        .entry-form {
+            background: #252020;
+            border-radius: 3%;
+            text-align: center;
+            padding: 2em;
+            max-width: 100%;
+        }
+
+        .form-control {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .submit-btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+    
+</head>
+<body>
+ 
+    <div class="entry-form">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5j00000D98yH" method="POST">
+            <input type="hidden" name="oid" value="00D5j00000D98yH">
+            <input type="hidden" name="retURL" value="https://www.google.com/">
+            <h2>Enroll Today!</h2>
+            <input id="first_name" maxlength="40" name="first_name" class="form-control" placeholder="First Name" required="" size="20" type="text" required>
+            <input id="last_name" maxlength="40" name="last_name" class="form-control" placeholder="Last Name" required="" size="20" type="text" required>
+            <input id="email" maxlength="80" name="email" size="20" type="email" class="form-control" placeholder="Your Email Address" required>
+            <input id="mobile" maxlength="10" name="mobile" type="tel" pattern="[0-9]*" class="form-control" placeholder="Mobile" required>
+            <input id="city" maxlength="40" name="city" size="20" type="text" class="form-control" placeholder="City" required>
+            <input id="state" maxlength="20" name="state" size="20" type="text" class="form-control" placeholder="State" required>
+            <button type="submit" name="submit" class="submit-btn form-control" id="form-submit">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
